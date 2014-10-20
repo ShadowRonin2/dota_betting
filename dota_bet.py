@@ -1,13 +1,14 @@
 from bs4 import BeautifulSoup
 import requests
+import csv
 #TODO file IO
 def processNewMatches():
 	newMatches = readMatchResults()
 	baseMMRs = getAllMMRs()
 	newMMRs = baseMMRs
 	for i in range(len(newMatches), 0):
-		team1 = getMMR(baseMMRs, newMatches[i][0]
-		team2 = getMMR(baseMMRs, newMatches[i][1]
+		team1 = getMMR(baseMMRs, newMatches[i][0])
+		team2 = getMMR(baseMMRs, newMatches[i][1])
 		k = 15
 		newMMRs[team1[1]][1] = team1[0] + k * (newMatches[i][2] - newMatches[i][3])
 		newMMRs[team2[1]][1] = team2[0] + k * (newMatches[i][3] - newMatches[i][2])
@@ -17,14 +18,24 @@ def processNewMatches():
 	
 def getMMR(allMMRs, team):
 	#returns [mmr, position]
+	
 	return 
 	
 def getAllMMRs():
 	#returns [team, mmr]
+	file = open('mmr.csv')
+	reader = csv.DictReader(file, delimiter=',')
+	aList = list(reader)
+	result = []
+	for row in aList:
+		result.append(list(row))
+	file.close()
+	return result
+	
 	
 	
 def writeMMRs(MMRs):
-
+	return
 
 
 def readMatchResults():
@@ -53,4 +64,4 @@ def readMatchResults():
 	
 	
 if __name__ == "__main__":
-        readMatchResults()
+        getAllMMRs()

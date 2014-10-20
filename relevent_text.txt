@@ -1,0 +1,36 @@
+<tr>
+	<td>
+		<a href="/dota2/tournaments/4977-the-summit-2/1312-round-robin/4983-europe/matches/56697-powerrangers-vs-alliance" class="match hover-background" style="background-image: url('/images/icons/games/list/dota2.png');">
+			<span class="opp opp1">
+			<span>PowerRangers</span><span title="Belarus" class="flag BY"></span> </span>
+			<span class="bet-percentage bet1">(36%)</span>
+			<span class="vs">vs</span>
+			<span class="bet-percentage bet2">(64%)</span>
+			<span class="opp opp2">
+			<span title="Sweden" class="flag SE"></span><span>Alliance</span> </span>
+		</a>
+		<img src="/images/icons/itembet/itembet.png" class="icon tooltip" title="ItemBet enabled">
+	</td>
+	<td class="type-specific">
+			<span class="score-wrap">
+			<span class="spoiler spoiler-showall-target">Show</span>
+			<span class="hidden">
+			<span class="score winner hscore">1</span> - <span class="score losser ascore">0</span> </span>
+		</span>
+		<span class="vod">
+		</span>
+	</td>
+	<td class="betting tooltip" title="Log in to see your bets.">
+		<span class="bet-opt correct ">&gt;</span>
+		<span class="bet-opt incorrect  bet-opt-inactive">=</span>
+		<span class="bet-opt incorrect ">&lt;</span>
+		<span class="currency"></span>
+	</td>
+	<td class="tournament">
+		<a href="/dota2/events/253-the-summit-2" class="tooltip-right" title="<div class=&quot;match-details&quot;><img class=&quot;tournament-image&quot; src=&quot;/uploads/images/events/logo/2014/october/253-1412539741.jpeg&quot; width=&quot;180&quot; /><span>The Summit 2 (Europe)</span></div>">
+			<span class="tournament-icon">
+				<img src="/uploads/images/events/logo/2014/october/253-1412539741.jpeg" width="60">
+			</span>
+		</a>
+	</td>
+</tr>

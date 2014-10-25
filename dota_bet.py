@@ -1,7 +1,13 @@
 from bs4 import BeautifulSoup
 import requests
 import csv
-#TODO file IO
+#TODO file O
+
+def main():
+   mmrs = getAllMMRs()
+   print(mmrs)
+   writeMMRs(mmrs)
+
 def processNewMatches():
 	newMatches = readMatchResults()
 	baseMMRs = getAllMMRs()
@@ -34,8 +40,12 @@ def getAllMMRs():
 	
 	
 	
-def writeMMRs(MMRs):
-	return
+def writeMMRs(MMRs = []):
+	file = open('mmr.csv')
+	writer = csv.writer(file)
+	for i in range(0,len(MMRs)):
+	  writer.writerows(MMRs[i][0]+","+MMRs[i][1])
+	file.close()
 
 
 def readMatchResults():
@@ -64,4 +74,4 @@ def readMatchResults():
 	
 	
 if __name__ == "__main__":
-        getAllMMRs()
+        main()
